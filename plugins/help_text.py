@@ -32,7 +32,7 @@ def help_user(bot, update):
         text=script.HELP_USER,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 Channel 🔰", url="https://t.me/ekbotz_update")],
                           [InlineKeyboardButton(text="♐️ Share ♐️", url="https://t.me/share/url?url=t.me/Rename_EK_Bot")],
-                                                   [InlineKeyboardButton(text="🏘 Home 🏘", url="http://t.me/Rename_EK_Bot?start=start")]]),
+                                                  [InlineKeyboardButton(text="🏘 Home 🏘", callback_data="start_data")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
