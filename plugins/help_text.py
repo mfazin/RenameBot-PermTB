@@ -32,9 +32,7 @@ def help_user(bot, update):
         text=script.HELP_USER,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 Channel 🔰", url="https://t.me/ekbotz_update")],
                           [InlineKeyboardButton(text="♐️ Share ♐️", url="https://t.me/share/url?url=t.me/Rename_EK_Bot")],
-                                                  [InlineKeyboardButton(text="🏘 Home 🏘", callback_data="A Simple And Fastest File Renamer Bot With Permanent Thumbnail support!💯
-<b>Send me any Telegram file and choose appropriate option! 
-For Know More Hit /help.</b>")]]),
+                                                  [InlineKeyboardButton(text="🏘 Home 🏘", callback_data="START_TEXT")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
